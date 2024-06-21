@@ -19,20 +19,20 @@ var client = new ApiClient(request);
 
 try
 {
-    var time = await client.Time.GetAsTimeGetResponseAsync();
+    var time = await client.Time.GetAsync();
     Console.WriteLine(await Serialize(time, options));
 
-    var guid = await client.Tools.Guid.GetAsGuidGetResponseAsync();
+    var guid = await client.Tools.Guid.GetAsync();
     Console.WriteLine(await Serialize(guid, options));
 
-    var key = await client.Tools.Machinekey.GetAsMachinekeyGetResponseAsync((query) =>
+    var key = await client.Tools.Machinekey.GetAsync((query) =>
     {
         query.QueryParameters.DecryptionAlgorithm = "AES-256";
         query.QueryParameters.ValidationAlgorithm = "SHA1";
     });
     Console.WriteLine(await Serialize(key, options));
 
-    var hash = await client.Tools.Hash.PostAsHashPostResponseAsync(new()
+    var hash = await client.Tools.Hash.PostAsync(new()
     {
         Algorithm = "sha1",
         Format = "hexadecimal",

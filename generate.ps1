@@ -1,3 +1,12 @@
 Push-Location ./KiotaExperiment
-kiota generate -l CSharp -c ApiClient -n KiotaExperiment.Client -d ./openapi.json -o ./Client --co
+
+kiota generate `
+    --language CSharp `
+    --class-name ApiClient `
+    --namespace-name KiotaExperiment.Client `
+    --openapi ./openapi.json `
+    --output ./Client `
+    --clean-output `
+    --exclude-backward-compatible
+
 Pop-Location
