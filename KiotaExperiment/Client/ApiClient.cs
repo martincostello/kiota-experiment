@@ -3,10 +3,7 @@ using KiotaExperiment.Client.Time;
 using KiotaExperiment.Client.Tools;
 using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions;
-using Microsoft.Kiota.Serialization.Form;
 using Microsoft.Kiota.Serialization.Json;
-using Microsoft.Kiota.Serialization.Multipart;
-using Microsoft.Kiota.Serialization.Text;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -36,12 +33,7 @@ namespace KiotaExperiment.Client
         public ApiClient(IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}", new Dictionary<string, object>())
         {
             ApiClientBuilder.RegisterDefaultSerializer<JsonSerializationWriterFactory>();
-            ApiClientBuilder.RegisterDefaultSerializer<TextSerializationWriterFactory>();
-            ApiClientBuilder.RegisterDefaultSerializer<FormSerializationWriterFactory>();
-            ApiClientBuilder.RegisterDefaultSerializer<MultipartSerializationWriterFactory>();
             ApiClientBuilder.RegisterDefaultDeserializer<JsonParseNodeFactory>();
-            ApiClientBuilder.RegisterDefaultDeserializer<TextParseNodeFactory>();
-            ApiClientBuilder.RegisterDefaultDeserializer<FormParseNodeFactory>();
             if (string.IsNullOrEmpty(RequestAdapter.BaseUrl))
             {
                 RequestAdapter.BaseUrl = "https://api.martincostello.com";
