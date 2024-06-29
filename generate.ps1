@@ -20,7 +20,8 @@ try {
         --clean-output `
         --exclude-backward-compatible `
         --deserializer Microsoft.Kiota.Serialization.Json.JsonParseNodeFactory `
-        --serializer Microsoft.Kiota.Serialization.Json.JsonSerializationWriterFactory
+        --serializer Microsoft.Kiota.Serialization.Json.JsonSerializationWriterFactory `
+        --structured-mime-types "application/json"
 
     if ($LASTEXITCODE -eq 0) {
         dotnet build
