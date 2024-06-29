@@ -11,15 +11,15 @@ Push-Location ./KiotaExperiment
 
 try {
     kiota generate `
-        --language CSharp `
+        --additional-data false `
         --class-name ApiClient `
+        --clean-output `
+        --deserializer Microsoft.Kiota.Serialization.Json.JsonParseNodeFactory `
+        --exclude-backward-compatible `
+        --language CSharp `
         --namespace-name KiotaExperiment.Client `
         --openapi $OpenApiUrl `
         --output ./Client `
-        --additional-data false `
-        --clean-output `
-        --exclude-backward-compatible `
-        --deserializer Microsoft.Kiota.Serialization.Json.JsonParseNodeFactory `
         --serializer Microsoft.Kiota.Serialization.Json.JsonSerializationWriterFactory `
         --structured-mime-types "application/json"
 
