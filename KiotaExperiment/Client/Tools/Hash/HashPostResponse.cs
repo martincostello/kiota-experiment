@@ -7,11 +7,9 @@ using System;
 namespace KiotaExperiment.Client.Tools.Hash
 {
     #pragma warning disable CS1591
-    public class HashPostResponse : IAdditionalDataHolder, IParsable
+    public class HashPostResponse : IParsable
     #pragma warning restore CS1591
     {
-        /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
-        public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>The hash property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -20,13 +18,6 @@ namespace KiotaExperiment.Client.Tools.Hash
 #else
         public string Hash { get; set; }
 #endif
-        /// <summary>
-        /// Instantiates a new <see cref="KiotaExperiment.Client.Tools.Hash.HashPostResponse"/> and sets the default values.
-        /// </summary>
-        public HashPostResponse()
-        {
-            AdditionalData = new Dictionary<string, object>();
-        }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -56,7 +47,6 @@ namespace KiotaExperiment.Client.Tools.Hash
         {
             _ = writer ?? throw new ArgumentNullException(nameof(writer));
             writer.WriteStringValue("hash", Hash);
-            writer.WriteAdditionalData(AdditionalData);
         }
     }
 }

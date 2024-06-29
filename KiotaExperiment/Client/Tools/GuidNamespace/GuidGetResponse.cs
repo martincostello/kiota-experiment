@@ -7,11 +7,9 @@ using System;
 namespace KiotaExperiment.Client.Tools.GuidNamespace
 {
     #pragma warning disable CS1591
-    public class GuidGetResponse : IAdditionalDataHolder, IParsable
+    public class GuidGetResponse : IParsable
     #pragma warning restore CS1591
     {
-        /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
-        public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>The guid property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -20,13 +18,6 @@ namespace KiotaExperiment.Client.Tools.GuidNamespace
 #else
         public string Guid { get; set; }
 #endif
-        /// <summary>
-        /// Instantiates a new <see cref="KiotaExperiment.Client.Tools.GuidNamespace.GuidGetResponse"/> and sets the default values.
-        /// </summary>
-        public GuidGetResponse()
-        {
-            AdditionalData = new Dictionary<string, object>();
-        }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -56,7 +47,6 @@ namespace KiotaExperiment.Client.Tools.GuidNamespace
         {
             _ = writer ?? throw new ArgumentNullException(nameof(writer));
             writer.WriteStringValue("guid", Guid);
-            writer.WriteAdditionalData(AdditionalData);
         }
     }
 }

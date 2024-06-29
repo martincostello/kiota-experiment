@@ -16,6 +16,7 @@ try {
         --namespace-name KiotaExperiment.Client `
         --openapi $OpenApiUrl `
         --output ./Client `
+        --additional-data false `
         --clean-output `
         --exclude-backward-compatible `
         --deserializer Microsoft.Kiota.Serialization.Json.JsonParseNodeFactory `
