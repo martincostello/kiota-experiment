@@ -3,6 +3,8 @@
 $ErrorActionPreference = "Stop"
 $ProgressPreference = "SilentlyContinue"
 
+$OpenApiUrl = "https://raw.githubusercontent.com/martincostello/api/dotnet-nightly/src/API/wwwroot/swagger/api/openapi.json"
+
 Push-Location ./KiotaExperiment
 
 try {
@@ -10,7 +12,7 @@ try {
         --language CSharp `
         --class-name ApiClient `
         --namespace-name KiotaExperiment.Client `
-        --openapi ./openapi.json `
+        --openapi $OpenApiUrl `
         --output ./Client `
         --clean-output `
         --exclude-backward-compatible `
