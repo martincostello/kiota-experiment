@@ -3,6 +3,8 @@
 $ErrorActionPreference = "Stop"
 $ProgressPreference = "SilentlyContinue"
 
+$env:KIOTA_TUTORIAL_ENABLED = "false"
+
 $OpenApiUrl = "https://raw.githubusercontent.com/martincostello/api/dotnet-nightly/src/API/wwwroot/swagger/api/openapi.json"
 
 Push-Location ./KiotaExperiment
