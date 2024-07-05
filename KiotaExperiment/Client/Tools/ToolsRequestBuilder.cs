@@ -2,10 +2,10 @@
 using KiotaExperiment.Client.Tools.GuidNamespace;
 using KiotaExperiment.Client.Tools.Hash;
 using KiotaExperiment.Client.Tools.Machinekey;
+using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System;
 namespace KiotaExperiment.Client.Tools
@@ -13,25 +13,26 @@ namespace KiotaExperiment.Client.Tools
     /// <summary>
     /// Builds and executes requests for operations under \tools
     /// </summary>
-    public class ToolsRequestBuilder : BaseRequestBuilder
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    public partial class ToolsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The guid property</summary>
-        public KiotaExperiment.Client.Tools.GuidNamespace.GuidRequestBuilder Guid
+        public global::KiotaExperiment.Client.Tools.GuidNamespace.GuidRequestBuilder Guid
         {
-            get => new KiotaExperiment.Client.Tools.GuidNamespace.GuidRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::KiotaExperiment.Client.Tools.GuidNamespace.GuidRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The hash property</summary>
-        public KiotaExperiment.Client.Tools.Hash.HashRequestBuilder Hash
+        public global::KiotaExperiment.Client.Tools.Hash.HashRequestBuilder Hash
         {
-            get => new KiotaExperiment.Client.Tools.Hash.HashRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::KiotaExperiment.Client.Tools.Hash.HashRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The machinekey property</summary>
-        public KiotaExperiment.Client.Tools.Machinekey.MachinekeyRequestBuilder Machinekey
+        public global::KiotaExperiment.Client.Tools.Machinekey.MachinekeyRequestBuilder Machinekey
         {
-            get => new KiotaExperiment.Client.Tools.Machinekey.MachinekeyRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::KiotaExperiment.Client.Tools.Machinekey.MachinekeyRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>
-        /// Instantiates a new <see cref="KiotaExperiment.Client.Tools.ToolsRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::KiotaExperiment.Client.Tools.ToolsRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -39,7 +40,7 @@ namespace KiotaExperiment.Client.Tools
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="KiotaExperiment.Client.Tools.ToolsRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::KiotaExperiment.Client.Tools.ToolsRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>

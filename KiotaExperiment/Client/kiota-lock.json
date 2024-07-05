@@ -2,7 +2,7 @@
   "descriptionHash": "6498D0D7FCA43ED1EF08C19551EB8AF39819A6EC2F8728C908754C21CB0C7E2A4571986E94B921A0DEA90CF4B8539E9466A365DDBC2966A62D51037CFB5433BD",
   "descriptionLocation": "https://raw.githubusercontent.com/martincostello/api/dotnet-nightly/src/API/wwwroot/swagger/api/openapi.json",
   "lockFileVersion": "1.0.0",
-  "kiotaVersion": "1.15.0",
+  "kiotaVersion": "1.16.0",
   "clientClassName": "ApiClient",
   "clientNamespaceName": "KiotaExperiment.Client",
   "language": "CSharp",
