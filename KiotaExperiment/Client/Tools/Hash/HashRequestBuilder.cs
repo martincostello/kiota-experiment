@@ -35,18 +35,18 @@ namespace KiotaExperiment.Client.Tools.Hash
         /// <summary>
         /// Generates a hash of some plaintext for a specified hash algorithm and returns it in the required format.
         /// </summary>
-        /// <returns>A <see cref="global::KiotaExperiment.Client.Tools.Hash.HashPostResponse"/></returns>
+        /// <returns>A <see cref="global::KiotaExperiment.Client.Models.HashResponse"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         /// <exception cref="global::KiotaExperiment.Client.Models.ProblemDetails">When receiving a 400 status code</exception>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::KiotaExperiment.Client.Tools.Hash.HashPostResponse?> PostAsync(global::KiotaExperiment.Client.Tools.Hash.HashPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::KiotaExperiment.Client.Models.HashResponse?> PostAsync(global::KiotaExperiment.Client.Models.HashRequest body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::KiotaExperiment.Client.Tools.Hash.HashPostResponse> PostAsync(global::KiotaExperiment.Client.Tools.Hash.HashPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::KiotaExperiment.Client.Models.HashResponse> PostAsync(global::KiotaExperiment.Client.Models.HashRequest body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             _ = body ?? throw new ArgumentNullException(nameof(body));
@@ -55,7 +55,7 @@ namespace KiotaExperiment.Client.Tools.Hash
             {
                 { "400", global::KiotaExperiment.Client.Models.ProblemDetails.CreateFromDiscriminatorValue },
             };
-            return await RequestAdapter.SendAsync<global::KiotaExperiment.Client.Tools.Hash.HashPostResponse>(requestInfo, global::KiotaExperiment.Client.Tools.Hash.HashPostResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::KiotaExperiment.Client.Models.HashResponse>(requestInfo, global::KiotaExperiment.Client.Models.HashResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Generates a hash of some plaintext for a specified hash algorithm and returns it in the required format.
@@ -65,11 +65,11 @@ namespace KiotaExperiment.Client.Tools.Hash
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(global::KiotaExperiment.Client.Tools.Hash.HashPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::KiotaExperiment.Client.Models.HashRequest body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(global::KiotaExperiment.Client.Tools.Hash.HashPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::KiotaExperiment.Client.Models.HashRequest body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             _ = body ?? throw new ArgumentNullException(nameof(body));

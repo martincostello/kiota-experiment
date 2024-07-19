@@ -4,46 +4,30 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace KiotaExperiment.Client.Tools.Hash
+namespace KiotaExperiment.Client.Models
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
     #pragma warning disable CS1591
-    public partial class HashPostRequestBody : IParsable
+    public partial class HashResponse : IParsable
     #pragma warning restore CS1591
     {
-        /// <summary>The algorithm property</summary>
+        /// <summary>The hash property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Algorithm { get; set; }
+        public string? Hash { get; set; }
 #nullable restore
 #else
-        public string Algorithm { get; set; }
-#endif
-        /// <summary>The format property</summary>
-#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
-#nullable enable
-        public string? Format { get; set; }
-#nullable restore
-#else
-        public string Format { get; set; }
-#endif
-        /// <summary>The plaintext property</summary>
-#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
-#nullable enable
-        public string? Plaintext { get; set; }
-#nullable restore
-#else
-        public string Plaintext { get; set; }
+        public string Hash { get; set; }
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::KiotaExperiment.Client.Tools.Hash.HashPostRequestBody"/></returns>
+        /// <returns>A <see cref="global::KiotaExperiment.Client.Models.HashResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::KiotaExperiment.Client.Tools.Hash.HashPostRequestBody CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::KiotaExperiment.Client.Models.HashResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             _ = parseNode ?? throw new ArgumentNullException(nameof(parseNode));
-            return new global::KiotaExperiment.Client.Tools.Hash.HashPostRequestBody();
+            return new global::KiotaExperiment.Client.Models.HashResponse();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -53,9 +37,7 @@ namespace KiotaExperiment.Client.Tools.Hash
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "algorithm", n => { Algorithm = n.GetStringValue(); } },
-                { "format", n => { Format = n.GetStringValue(); } },
-                { "plaintext", n => { Plaintext = n.GetStringValue(); } },
+                { "hash", n => { Hash = n.GetStringValue(); } },
             };
         }
         /// <summary>
@@ -65,9 +47,7 @@ namespace KiotaExperiment.Client.Tools.Hash
         public virtual void Serialize(ISerializationWriter writer)
         {
             _ = writer ?? throw new ArgumentNullException(nameof(writer));
-            writer.WriteStringValue("algorithm", Algorithm);
-            writer.WriteStringValue("format", Format);
-            writer.WriteStringValue("plaintext", Plaintext);
+            writer.WriteStringValue("hash", Hash);
         }
     }
 }

@@ -4,11 +4,11 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace KiotaExperiment.Client.Tools.Machinekey
+namespace KiotaExperiment.Client.Models
 {
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
     #pragma warning disable CS1591
-    public partial class MachinekeyGetResponse : IParsable
+    public partial class MachineKeyResponse : IParsable
     #pragma warning restore CS1591
     {
         /// <summary>The decryptionKey property</summary>
@@ -38,12 +38,12 @@ namespace KiotaExperiment.Client.Tools.Machinekey
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::KiotaExperiment.Client.Tools.Machinekey.MachinekeyGetResponse"/></returns>
+        /// <returns>A <see cref="global::KiotaExperiment.Client.Models.MachineKeyResponse"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::KiotaExperiment.Client.Tools.Machinekey.MachinekeyGetResponse CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::KiotaExperiment.Client.Models.MachineKeyResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             _ = parseNode ?? throw new ArgumentNullException(nameof(parseNode));
-            return new global::KiotaExperiment.Client.Tools.Machinekey.MachinekeyGetResponse();
+            return new global::KiotaExperiment.Client.Models.MachineKeyResponse();
         }
         /// <summary>
         /// The deserialization information for the current model

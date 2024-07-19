@@ -35,17 +35,17 @@ namespace KiotaExperiment.Client.Tools.GuidNamespace
         /// <summary>
         /// Generates a new GUID in the specified format.
         /// </summary>
-        /// <returns>A <see cref="global::KiotaExperiment.Client.Tools.GuidNamespace.GuidGetResponse"/></returns>
+        /// <returns>A <see cref="global::KiotaExperiment.Client.Models.GuidResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         /// <exception cref="global::KiotaExperiment.Client.Models.ProblemDetails">When receiving a 400 status code</exception>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::KiotaExperiment.Client.Tools.GuidNamespace.GuidGetResponse?> GetAsync(Action<RequestConfiguration<global::KiotaExperiment.Client.Tools.GuidNamespace.GuidRequestBuilder.GuidRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::KiotaExperiment.Client.Models.GuidResponse?> GetAsync(Action<RequestConfiguration<global::KiotaExperiment.Client.Tools.GuidNamespace.GuidRequestBuilder.GuidRequestBuilderGetQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::KiotaExperiment.Client.Tools.GuidNamespace.GuidGetResponse> GetAsync(Action<RequestConfiguration<global::KiotaExperiment.Client.Tools.GuidNamespace.GuidRequestBuilder.GuidRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::KiotaExperiment.Client.Models.GuidResponse> GetAsync(Action<RequestConfiguration<global::KiotaExperiment.Client.Tools.GuidNamespace.GuidRequestBuilder.GuidRequestBuilderGetQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
@@ -53,7 +53,7 @@ namespace KiotaExperiment.Client.Tools.GuidNamespace
             {
                 { "400", global::KiotaExperiment.Client.Models.ProblemDetails.CreateFromDiscriminatorValue },
             };
-            return await RequestAdapter.SendAsync<global::KiotaExperiment.Client.Tools.GuidNamespace.GuidGetResponse>(requestInfo, global::KiotaExperiment.Client.Tools.GuidNamespace.GuidGetResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::KiotaExperiment.Client.Models.GuidResponse>(requestInfo, global::KiotaExperiment.Client.Models.GuidResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Generates a new GUID in the specified format.
