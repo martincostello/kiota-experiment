@@ -36,7 +36,7 @@ namespace KiotaExperiment.Client.Tools.Hash
         /// Generates a hash of some plaintext for a specified hash algorithm and returns it in the required format.
         /// </summary>
         /// <returns>A <see cref="global::KiotaExperiment.Client.Models.HashResponse"/></returns>
-        /// <param name="body">The request body</param>
+        /// <param name="body">Represents a request to the /tools/hash API resource.</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         /// <exception cref="global::KiotaExperiment.Client.Models.ProblemDetails">When receiving a 400 status code</exception>
@@ -61,7 +61,7 @@ namespace KiotaExperiment.Client.Tools.Hash
         /// Generates a hash of some plaintext for a specified hash algorithm and returns it in the required format.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
-        /// <param name="body">The request body</param>
+        /// <param name="body">Represents a request to the /tools/hash API resource.</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable

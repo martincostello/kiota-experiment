@@ -6,12 +6,13 @@ using System.IO;
 using System;
 namespace KiotaExperiment.Client.Models
 {
+    /// <summary>
+    /// Represents a request to the /tools/hash API resource.
+    /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
-    #pragma warning disable CS1591
     public partial class HashRequest : IParsable
-    #pragma warning restore CS1591
     {
-        /// <summary>The algorithm property</summary>
+        /// <summary>The name of the hash algorithm to use.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public string? Algorithm { get; set; }
@@ -19,7 +20,7 @@ namespace KiotaExperiment.Client.Models
 #else
         public string Algorithm { get; set; }
 #endif
-        /// <summary>The format property</summary>
+        /// <summary>The format in which to return the hash.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public string? Format { get; set; }
@@ -27,7 +28,7 @@ namespace KiotaExperiment.Client.Models
 #else
         public string Format { get; set; }
 #endif
-        /// <summary>The plaintext property</summary>
+        /// <summary>The plaintext value to generate the hash from.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public string? Plaintext { get; set; }

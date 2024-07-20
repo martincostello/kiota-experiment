@@ -6,12 +6,13 @@ using System.IO;
 using System;
 namespace KiotaExperiment.Client.Models
 {
+    /// <summary>
+    /// Represents the response from the /tools/guid API resource.
+    /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
-    #pragma warning disable CS1591
     public partial class GuidResponse : IParsable
-    #pragma warning restore CS1591
     {
-        /// <summary>The guid property</summary>
+        /// <summary>The generated GUID value.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public string? Guid { get; set; }

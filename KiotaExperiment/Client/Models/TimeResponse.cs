@@ -6,12 +6,13 @@ using System.IO;
 using System;
 namespace KiotaExperiment.Client.Models
 {
+    /// <summary>
+    /// Represents the response from the /time API resource.
+    /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
-    #pragma warning disable CS1591
     public partial class TimeResponse : IParsable
-    #pragma warning restore CS1591
     {
-        /// <summary>The rfc1123 property</summary>
+        /// <summary>The current UTC date and time in RFC1123 format.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public string? Rfc1123 { get; set; }
@@ -19,9 +20,9 @@ namespace KiotaExperiment.Client.Models
 #else
         public string Rfc1123 { get; set; }
 #endif
-        /// <summary>The timestamp property</summary>
+        /// <summary>The timestamp for the response for which the times are generated.</summary>
         public DateTimeOffset? Timestamp { get; set; }
-        /// <summary>The universalFull property</summary>
+        /// <summary>The current UTC date and time in universal full format.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public string? UniversalFull { get; set; }
@@ -29,7 +30,7 @@ namespace KiotaExperiment.Client.Models
 #else
         public string UniversalFull { get; set; }
 #endif
-        /// <summary>The universalSortable property</summary>
+        /// <summary>The current UTC date and time in universal sortable format.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public string? UniversalSortable { get; set; }
@@ -37,7 +38,7 @@ namespace KiotaExperiment.Client.Models
 #else
         public string UniversalSortable { get; set; }
 #endif
-        /// <summary>The unix property</summary>
+        /// <summary>The number of seconds since the UNIX epoch.</summary>
         public long? Unix { get; set; }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value

@@ -6,12 +6,13 @@ using System.IO;
 using System;
 namespace KiotaExperiment.Client.Models
 {
+    /// <summary>
+    /// Represents the response from the /tools/machinekey API resource.
+    /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
-    #pragma warning disable CS1591
     public partial class MachineKeyResponse : IParsable
-    #pragma warning restore CS1591
     {
-        /// <summary>The decryptionKey property</summary>
+        /// <summary>A string containing the decryption key.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public string? DecryptionKey { get; set; }
@@ -19,7 +20,7 @@ namespace KiotaExperiment.Client.Models
 #else
         public string DecryptionKey { get; set; }
 #endif
-        /// <summary>The machineKeyXml property</summary>
+        /// <summary>A string containing the machineKey XML configuration element.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public string? MachineKeyXml { get; set; }
@@ -27,7 +28,7 @@ namespace KiotaExperiment.Client.Models
 #else
         public string MachineKeyXml { get; set; }
 #endif
-        /// <summary>The validationKey property</summary>
+        /// <summary>A string containing the validation key.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public string? ValidationKey { get; set; }
