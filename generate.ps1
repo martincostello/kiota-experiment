@@ -1,6 +1,7 @@
 #! /usr/bin/env pwsh
 
 param(
+    [Parameter(Mandatory = $false)][string] $OpenApiUrl = "https://api.martincostello.com/openapi/api.json",
     [Parameter(Mandatory = $false)][switch] $Regenerate
 )
 
@@ -9,7 +10,6 @@ $ProgressPreference = "SilentlyContinue"
 
 $env:KIOTA_TUTORIAL_ENABLED = "false"
 
-$OpenApiUrl = "https://raw.githubusercontent.com/martincostello/api/dotnet-nightly/src/API/wwwroot/swagger/api/openapi.json"
 $OutputPath = "./Client"
 
 Push-Location ./KiotaExperiment

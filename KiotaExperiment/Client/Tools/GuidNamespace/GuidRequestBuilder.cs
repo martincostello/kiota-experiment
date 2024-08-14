@@ -13,7 +13,7 @@ namespace KiotaExperiment.Client.Tools.GuidNamespace
     /// <summary>
     /// Builds and executes requests for operations under \tools\guid
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class GuidRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -86,7 +86,7 @@ namespace KiotaExperiment.Client.Tools.GuidNamespace
         /// <summary>
         /// Generates a new GUID in the specified format.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class GuidRequestBuilderGetQueryParameters 
         {
             /// <summary>The format for which to generate a GUID.</summary>

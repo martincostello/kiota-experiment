@@ -9,7 +9,7 @@ namespace KiotaExperiment.Client.Models
     /// <summary>
     /// Represents the response from the /tools/guid API resource.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class GuidResponse : IParsable
     {
         /// <summary>The generated GUID value.</summary>

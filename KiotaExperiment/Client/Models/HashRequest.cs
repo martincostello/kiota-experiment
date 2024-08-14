@@ -9,7 +9,7 @@ namespace KiotaExperiment.Client.Models
     /// <summary>
     /// Represents a request to the /tools/hash API resource.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class HashRequest : IParsable
     {
         /// <summary>The name of the hash algorithm to use.</summary>
