@@ -14,7 +14,7 @@ namespace KiotaExperiment.Client
     /// <summary>
     /// The main entry point of the SDK, exposes the configuration and the fluent API.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class ApiClient : BaseRequestBuilder
     {
         /// <summary>The time property</summary>

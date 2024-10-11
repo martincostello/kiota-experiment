@@ -1,9 +1,10 @@
 {
-  "descriptionHash": "400935A3C9CC6B633D774A8FA1F781949D1F368552535DD7DBDE3BD7CB3C8D99F5C0799AD823793322CD36238E5E9A0A508C84D9CE22AC4F17E9DC9004F029E5",
+  "descriptionHash": "58E459735C907D4A2FF74C2EAC937E61691EE7DA2DB247751D59BC4576B45CBFC99BC1A1B58EFFF39F68943280CDA0FECD955E4CF0A7DA5DB4B4DAE5FA46390B",
   "descriptionLocation": "https://api.martincostello.com/openapi/api.json",
   "lockFileVersion": "1.0.0",
-  "kiotaVersion": "1.18.0",
+  "kiotaVersion": "1.19.1",
   "clientClassName": "ApiClient",
+  "typeAccessModifier": "Public",
   "clientNamespaceName": "KiotaExperiment.Client",
   "language": "CSharp",
   "usesBackingStore": false,

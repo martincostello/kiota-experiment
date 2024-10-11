@@ -10,7 +10,7 @@ namespace KiotaExperiment.Client.Models
     /// <summary>
     /// Represents the response from the /tools/machinekey API resource.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class MachineKeyResponse : IParsable
     {
         /// <summary>A string containing the decryption key.</summary>

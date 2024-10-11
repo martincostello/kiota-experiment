@@ -14,7 +14,7 @@ namespace KiotaExperiment.Client.Tools.Hash
     /// <summary>
     /// Builds and executes requests for operations under \tools\hash
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class HashRequestBuilder : BaseRequestBuilder
     {
         /// <summary>

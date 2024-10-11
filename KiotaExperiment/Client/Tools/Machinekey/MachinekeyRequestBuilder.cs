@@ -14,7 +14,7 @@ namespace KiotaExperiment.Client.Tools.Machinekey
     /// <summary>
     /// Builds and executes requests for operations under \tools\machinekey
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class MachinekeyRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -87,7 +87,7 @@ namespace KiotaExperiment.Client.Tools.Machinekey
         /// <summary>
         /// Generates a machine key for a Web.config configuration file for ASP.NET.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class MachinekeyRequestBuilderGetQueryParameters 
         {
             /// <summary>The name of the decryption algorithm.</summary>
