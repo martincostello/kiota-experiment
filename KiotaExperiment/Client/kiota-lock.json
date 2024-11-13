@@ -2,7 +2,7 @@
   "descriptionHash": "58E459735C907D4A2FF74C2EAC937E61691EE7DA2DB247751D59BC4576B45CBFC99BC1A1B58EFFF39F68943280CDA0FECD955E4CF0A7DA5DB4B4DAE5FA46390B",
   "descriptionLocation": "https://api.martincostello.com/openapi/api.json",
   "lockFileVersion": "1.0.0",
-  "kiotaVersion": "1.19.1",
+  "kiotaVersion": "1.20.0",
   "clientClassName": "ApiClient",
   "typeAccessModifier": "Public",
   "clientNamespaceName": "KiotaExperiment.Client",
